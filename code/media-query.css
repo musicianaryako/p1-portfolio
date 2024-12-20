@@ -1,0 +1,181 @@
+/* TABLETS AND SMALL SCREENS (1024px AND BELOW) */
+@media (max-width: 1024px) {
+  nav {
+    padding: 15px 30px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 30px 10px;
+  }
+
+  .hero-pic img {
+    width: 280px;
+  }
+
+  .text {
+    padding: 0 15px;
+  }
+
+  .name {
+    font-size: 6rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .my-pic {
+    width: 280px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .contact-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* MOBILE DEVICES (768px AND BELOW) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-pic img {
+    width: 200px;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .about-me-container {
+    text-align: center;
+  }
+
+  .my-pic {
+    width: 200px;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .download-cv,
+  .contact {
+    width: 100px;
+    padding: 10px;
+  }
+
+  .contact-form {
+    width: 95%;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+}
+
+/* EXTRA SMALL DEVICES (480px AND BELOW) */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .text {
+    padding: 0 10px;
+  }
+
+  .hero-pic img {
+    width: 150px;
+  }
+
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .my-pic {
+    width: 150px;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .contact-details {
+    gap: 5px;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.6rem;
+  }
+}

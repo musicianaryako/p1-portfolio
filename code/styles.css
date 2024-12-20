@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+body {
+  color: #333;
+  font-family: "Inter", serif;
+  background-color: #fafafa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #ffffff;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+nav li {
+  list-style: none;
+}
+
+.logo {
+  cursor: default;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: black;
+}
+
+nav a {
+  color: black;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+nav a:hover {
+  color: rgb(188, 188, 188);
+  text-decoration-color: rgb(85, 85, 85);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+#hero {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+section {
+  margin: 50px;
+}
+
+.hero-pic img {
+  border-radius: 50%;
+  margin: 50px;
+  width: 360px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text p {
+  color: rgb(85, 85, 85);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 8rem;
+  margin: 0;
+}
+
+.btn-container {
+  padding-top: 25px;
+}
+
+.download-cv {
+  background: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 20px;
+  width: 150px;
+}
+
+.download-cv:hover {
+  background-color: black;
+  color: white;
+}
+
+.contact {
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  width: 150px;
+}
+
+.contact:hover {
+  background: transparent;
+  color: black;
+}
+
+.socials {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 20px;
+}
+
+.linkedin {
+  width: 30px;
+}
+
+.github {
+  width: 30px;
+}
+
+.about-me-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Overall Section Layout */
+#about-me {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Container to hold image and content side-by-side */
+.about-me-container {
+  /* Align vertically */
+  max-width: 1200px;
+  align-items: center;
+  display: flex;
+  gap: 40px;
+}
+
+/* Left Side Image Styling */
+.my-pic {
+  /* Adjust image size */
+  border-radius: 20px;
+  object-fit: cover;
+  width: 350px;
+}
+
+/* Right Side Content */
+.content-container {
+  /* Space between cards and text */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card Container (for Experience and Education) */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 260px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+/* Below Cards Text */
+.card-text p {
+  /* Optional width control */
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+#about-me p {
+  margin-bottom: 10px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  height: 80px;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+.experience {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+  margin: 50px;
+}
+
+.experience img {
+  background-size: contain;
+  width: 60px;
+}
+
+.soon {
+  display: flex;
+  justify-content: center;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 20px; /* Add space between items */
+  padding: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.item h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.item button {
+  background: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100px;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.work-in-progress {
+  border-radius: 15px;
+  border: 1px rgb(221, 221, 221) solid;
+  height: 300px;
+  width: 350px;
+  margin: 10px;
+  padding: 80xpx;
+  text-align: center;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icon {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-details img {
+  width: 20px;
+}
+
+.contact-form {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+  padding: 20px;
+  width: 500px;
+}
+
+.form-group {
+  color: #555;
+  display: block;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.contact-form h2 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  /* Prevent overflow */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1em;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #000000;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1em;
+  padding: 10px;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #3c3c3c;
+  transition: background-color 0.3s;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.6rem;
+}

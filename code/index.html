@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media-query.css" />
+    <title>Mike Lorenz Elesio</title>
+  </head>
+  <body>
+    <!-- Navigation Section -->
+    <nav>
+      <div class="logo">Mike Lorenz Elesio</div>
+      <ul class="nav-links">
+        <li><a href="#About">About</a></li>
+        <li><a href="#tech-stack">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-pic">
+        <img src="images/Mike Hero-modified.png" alt="Hero" />
+      </div>
+      <div class="text">
+        <p>Hello, I'm</p>
+        <h1 class="name">Mike</h1>
+        <p class="title">Fullstack Developer</p>
+        <!-- Buttons -->
+        <div class="btn-container">
+          <button
+            class="download-cv"
+            onclick="window.open('./assets/mike-elesio-cv.pdf', '_blank')"
+          >
+            Download CV
+          </button>
+          <button
+            class="contact"
+            onclick="location.href='mailto:mikelorenz.elesio@gmail.com'"
+          >
+            Email Me!
+          </button>
+
+          <!-- Socials -->
+          <div class="socials">
+            <a
+              href="https://www.linkedin.com/in/mike-lorenz-elesio/"
+              target="_blank"
+              ><img src="assets/linkedin.png" alt="" class="linkedin"
+            /></a>
+
+            <a href="https://github.com/musicianaryako" target="_blank"
+              ><img src="assets/github.png" alt="" class="github"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="About"></div>
+    <div class="about-me-header">
+      <p>Get to Know More</p>
+      <h1>About Me</h1>
+    </div>
+
+    <section id="about-me">
+      <div class="about-me-container">
+        <!-- Left Side Image -->
+        <img src="images/Me.jpg" alt="Mike" class="my-pic" />
+
+        <!-- Right Side Content -->
+        <div class="content-container">
+          <div class="card-container">
+            <div class="card">
+              <h3>Experience</h3>
+              <p>1+ Month</p>
+              <p>Fullstack Development</p>
+            </div>
+            <div class="card">
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree</p>
+              <p>Information and Communications Technology</p>
+            </div>
+          </div>
+
+          <!-- Below Cards Text -->
+          <div class="card-text">
+            <p>
+              Hi, I’m Mike, an aspiring Fullstack Developer with a strong
+              passion for building intuitive, dynamic, and high-performing web
+              applications. I thrive at the intersection of creativity and
+              technology, specializing in crafting responsive frontends and
+              robust backends that deliver seamless and engaging user
+              experiences.
+            </p>
+            <p>
+              My expertise spans modern frameworks, tools, and technologies,
+              allowing me to develop solutions that are not only functional but
+              also scalable and visually appealing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="tech-stack"></div>
+    <div class="header">
+      <p>Explore My</p>
+      <h1>Tech Stack</h1>
+    </div>
+    <section class="tech">
+      <div class="experience">
+        <li><img src="images/html.png" alt="html" /></li>
+        <li><img src="images/CSS.png" alt="CSS" /></li>
+        <li><img src="images/Javascript.png" alt="JS" /></li>
+      </div>
+
+      <div class="soon">
+        <p>Will be learning more! Stay Tuned!</p>
+      </div>
+    </section>
+
+    <div id="projects"></div>
+    <div class="header">
+      <p>Browse My Recent</p>
+      <h1>Projects</h1>
+    </div>
+
+    <section class="project-container">
+      <div class="item">
+        <h1>Project 1</h1>
+        <div class="button-container">
+          <div class="work-in-progress">This is a work in progress</div>
+          <button class="btn">View Demo</button>
+          <button class="btn">View Git</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <h1>Project 2</h1>
+        <div class="button-container">
+          <div class="work-in-progress">This is a work in progress</div>
+          <button class="btn">View Demo</button>
+          <button class="btn">View Git</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <h1>Project 3</h1>
+        <div class="button-container">
+          <div class="work-in-progress">This is a work in progress</div>
+          <button class="btn">View Demo</button>
+          <button class="btn">View Git</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="contact"></div>
+
+    <div class="header">
+      <p>Get in Touch</p>
+      <h1>Contact Me</h1>
+    </div>
+    <section class="contact-me">
+      <!-- Left Side-->
+      <div class="contact-details">
+        <div class="contact-icon">
+          <img src="assets/location.png" alt="location-icon" />
+          <p class="contact-me">Cebu, Philippines</p>
+        </div>
+        <div class="contact-icon">
+          <img src="assets/phone.png" alt="phone-icon" />
+          <p class="contact-me">+63 9322 782 2331</p>
+        </div>
+        <div class="contact-icon">
+          <img src="assets/email.png" alt="email-icon" />
+          <p class="contact-me">mikelorenz.elesio@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Right Side-->
+      <div class="contact-form">
+        <form action="#" method="POST">
+          <!-- Email Input -->
+          <div class="form-group">
+            <label for="email">Enter your email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@mail.com"
+              required
+            />
+          </div>
+
+          <!-- Name Input -->
+          <div class="form-group">
+            <label for="name">Enter your name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Full Name"
+              required
+            />
+          </div>
+
+          <!-- Subject Input -->
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              required
+            />
+          </div>
+
+          <!-- Message Input -->
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-group">
+            <button type="submit" class="submit-button">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Mike Lorenz Elesio. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
